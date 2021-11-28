@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关于</title>
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+		<!-- 自定义样式 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/about-style.css">
+		<!-- vue.js -->
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="root">
+			<!-- 导航栏 -->
+			<div class="navigation">
+				<div class="row">
+					<div class="col-md-3">
+						<h1>Huaqiwill</h1>
+					</div>
+					<div class="col-md-3 col-md-offset-6">
+						<ul class="nav nav-pills">
+							<li><a href="index.html">主页</a></li>
+							<li><a href="blog.html">博客</a></li>
+							<li><a href="life.html">生活</a></li>
+							<li class="active"><a href="about.html">关于</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 关于我 -->
+			<div class="contatiner">
+				<div class="">
+					<div class="a-about">
+						<h1 class="a-head">关于</h1>
+						<h2 class="a-about-2">关于我</h2>
+						<p>{{base_info.p}}</p>
+						<ul class="a-ul">
+							<li class="a-li"><span>名字：</span> <span>{{base_info.name}}</span></li>
+							<li class="a-li"><span>出生日期：</span> <span>{{base_info.birth}}</span></li>
+							<li class="a-li"><span>地址：</span> <span>{{base_info.adress}}</span></li>
+							<li class="a-li"><span>邮箱：</span> <span>{{base_info.mail}}</span></li>
+							<li class="a-li"><span>QQ： </span> <span>{{base_info.qq}}</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 反馈 -->
+		<div style="margin-left: 20px;">
+		
+			<form action="" method="">
+				<div class="con-box">
+					<input type="text" name="" id="" value="" placeholder="你的名字" />
+				</div>
+				<div class="con-box">
+					<input type="email" name="" id="" value="" placeholder="你的邮箱" />
+				</div>
+				<div class="con-box">
+					<input type="text" name="" id="" value="" placeholder="问题" />
+				</div>
+				<div class="con-areabox">
+					<textarea rows="" cols="" placeholder="附加信息"></textarea>
+				</div>
+				<div class="con-btn">
+					<input type="submit" name="" id="" value="发送信息" />
+				</div>
+			</form>
+		
+			<div class="">
+				<div></div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			const app = new Vue({
+					el: "#root",
+					data: {
+						links: [{
+								"href": "contact.html",
+								"title": "联系"
+							},
+							{
+								"href": "about.html",
+								"title": "关于"
+							},
+							{
+								"href": "blog.html",
+								"title": "博客"
+							},
+							{
+								"href": "index.html",
+								"title": "主页"
+							}
+						],
+						base_info:{
+							"p":"行动才是试金石。",
+							"name":"Huaqiwill",
+							"birth":"2003年11月",
+							"adress":"湖南，娄底",
+							"mail":"3173484026@qq.com",
+							"qq":"3173484026"
+						}
+					}
+				}
+
+			)
+		</script>
+	</body>
+</html>

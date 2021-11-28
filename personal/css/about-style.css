@@ -1,0 +1,42 @@
+/* 反馈 */
+.con-box {}
+
+.con-box input {
+	width: 300px;
+	height: 40px;
+	padding-left: 10px;
+}
+
+.con-areabox {}
+
+.con-areabox textarea {
+	width: 300px;
+	height: 200px;
+	padding-left: 10px;
+}
+
+.con-btn {}
+
+.con-btn input {
+	width: 100px;
+	height: 40px;
+}
+
+/* 关于我 */
+.a-about {
+	text-align: center;
+}
+
+.a-head {
+	font-size: 36px;
+}
+
+.a-ul {
+	border: 1px solid #eee;
+	border-radius: 14px;
+}
+
+.a-li {
+	list-style: none;
+	padding: 10px;
+}
